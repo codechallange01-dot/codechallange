@@ -65,6 +65,26 @@ function App() {
   return (
     <div className="app">
       <HeroBanner apiStatus={apiStatus} />
+      <main className="main-content">
+        <section className="challenge-card">
+          <div className="challenge-badge">Challenge 5</div>
+          <h2 className="challenge-title">📊 Live Polling & Survey System</h2>
+          <p className="challenge-description">
+            Build a real-time polling system where an admin creates a poll with a question and multiple choice options. Users vote by selecting an option — each user can vote only once. Results update in real-time with a bar chart showing vote counts and percentage per option. The dashboard displays total votes, the leading option, and a participation timeline. Includes the ability to close a poll and declare the result.
+          </p>
+          <div className="challenge-footer">
+            <div className="challenge-timer">
+              <span className="timer-icon">⏱️</span>
+              <span>5 Minute Challenge</span>
+            </div>
+            <div className="challenge-stack">
+              <span className="stack-tag">React</span>
+              <span className="stack-tag">Node.js</span>
+              <span className="stack-tag">PostgreSQL</span>
+            </div>
+          </div>
+        </section>
+      </main>
       <Footer />
     </div>
   );
