@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #0f0f1a;
+  --bg-secondary: #1a1a2e;
+  --bg-card: #16213e;
+  --accent: #00d4ff;
+  --accent-glow: rgba(0, 212, 255, 0.3);
+  --accent-secondary: #7b2ff7;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0b0;
+  --success: #00e676;
+  --danger: #ff5252;
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(123, 47, 247, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(0, 212, 255, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}

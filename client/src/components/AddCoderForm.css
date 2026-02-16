@@ -1,0 +1,63 @@
+.add-coder-section {
+  margin-bottom: 1rem;
+}
+
+.add-coder-form {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.form-input {
+  flex: 1;
+  min-width: 180px;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.form-input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.6;
+}
+
+.form-button {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.form-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px var(--accent-glow);
+}
+
+.form-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
