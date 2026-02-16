@@ -65,6 +65,26 @@ function App() {
   return (
     <div className="app">
       <HeroBanner apiStatus={apiStatus} />
+      <main className="main-content">
+        <section className="challenge-card">
+          <div className="challenge-badge">Challenge 2</div>
+          <h2 className="challenge-title">💰 Expense Tracker & Budget Manager</h2>
+          <p className="challenge-description">
+            Build a personal finance tracker where users log daily income and expenses with a category (Food, Rent, Transport, Shopping, Bills, etc.) and amount. The dashboard displays total income, total expenses, and current balance. A breakdown chart shows spending per category. Users can set a monthly budget limit — the system alerts when spending exceeds the budget. Includes a transaction history with date filters.
+          </p>
+          <div className="challenge-footer">
+            <div className="challenge-timer">
+              <span className="timer-icon">⏱️</span>
+              <span>5 Minute Challenge</span>
+            </div>
+            <div className="challenge-stack">
+              <span className="stack-tag">React</span>
+              <span className="stack-tag">Node.js</span>
+              <span className="stack-tag">PostgreSQL</span>
+            </div>
+          </div>
+        </section>
+      </main>
       <Footer />
     </div>
   );
