@@ -65,6 +65,26 @@ function App() {
   return (
     <div className="app">
       <HeroBanner apiStatus={apiStatus} />
+      <main className="main-content">
+        <section className="challenge-card">
+          <div className="challenge-badge">Challenge 3</div>
+          <h2 className="challenge-title">🏋️ Health & Fitness Tracker with AI Meal Planner</h2>
+          <p className="challenge-description">
+            Build a health tracker that collects user details — Name, Age, Weight (kg), and Height (cm) — and asks for their fitness goal (Keep Fit, Lose Weight, Muscle Mass, or Biceps/Strength). The system calculates BMI, classifies it (Underweight / Normal / Overweight / Obese), and generates a personalized 7-day meal plan with breakfast, lunch, dinner, and snacks based on the user's goal and calorie needs. Displays daily calorie and protein targets alongside the meal schedule.
+          </p>
+          <div className="challenge-footer">
+            <div className="challenge-timer">
+              <span className="timer-icon">⏱️</span>
+              <span>5 Minute Challenge</span>
+            </div>
+            <div className="challenge-stack">
+              <span className="stack-tag">React</span>
+              <span className="stack-tag">Node.js</span>
+              <span className="stack-tag">PostgreSQL</span>
+            </div>
+          </div>
+        </section>
+      </main>
       <Footer />
     </div>
   );
