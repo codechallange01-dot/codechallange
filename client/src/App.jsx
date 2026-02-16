@@ -85,6 +85,40 @@ function App() {
             </div>
           </div>
         </section>
+
+        <section className="rules-card">
+          <h3 className="rules-title">📜 Common Rules</h3>
+          <div className="rules-grid">
+            <div className="rule-item">
+              <span className="rule-icon">🛠️</span>
+              <div>
+                <strong>Tech Stack</strong>
+                <p>React + Node.js + PostgreSQL</p>
+              </div>
+            </div>
+            <div className="rule-item">
+              <span className="rule-icon">⏱️</span>
+              <div>
+                <strong>Time Limit</strong>
+                <p>5 minutes with GitHub Copilot</p>
+              </div>
+            </div>
+            <div className="rule-item">
+              <span className="rule-icon">✅</span>
+              <div>
+                <strong>Must Include</strong>
+                <p>Full-stack CRUD, a styled UI, and a working database</p>
+              </div>
+            </div>
+            <div className="rule-item">
+              <span className="rule-icon">⭐</span>
+              <div>
+                <strong>Bonus</strong>
+                <p>Responsive design, animations, or real-time updates</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
