@@ -67,7 +67,7 @@ function App() {
       <HeroBanner apiStatus={apiStatus} />
       <main className="main-content">
         <section className="challenge-card">
-          <div className="challenge-badge">Challenge 4</div>
+          <div className="challenge-badge">Challenge</div>
           <h2 className="challenge-title">📋 Project Task Board (Kanban)</h2>
           <p className="challenge-description">
             Build a drag-and-drop Kanban board for project management. Users create task cards with a title, description, and assignee. Tasks move across four columns: To Do → In Progress → Review → Done. Each card shows its current status with color-coded labels. The board displays a project completion percentage bar. Users can add, edit, and delete tasks. Includes a filter to view tasks by assignee.
@@ -75,7 +75,7 @@ function App() {
           <div className="challenge-footer">
             <div className="challenge-timer">
               <span className="timer-icon">⏱️</span>
-              <span>5 Minute Challenge</span>
+              <span>10 Minute Challenge</span>
             </div>
             <div className="challenge-stack">
               <span className="stack-tag">React</span>
@@ -94,7 +94,7 @@ function App() {
             </div>
             <div className="rule-item">
               <span className="rule-icon">⏱️</span>
-              <div><strong>Time Limit</strong><p>5 minutes with GitHub Copilot</p></div>
+              <div><strong>Time Limit</strong><p>10 minutes with GitHub Copilot</p></div>
             </div>
             <div className="rule-item">
               <span className="rule-icon">✅</span>
