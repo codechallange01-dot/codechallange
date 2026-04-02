@@ -65,6 +65,61 @@ function App() {
   return (
     <div className="app">
       <HeroBanner apiStatus={apiStatus} />
+      <main className="main-content">
+        <section className="challenge-card">
+          <div className="challenge-badge">Challenge 1</div>
+          <h2 className="challenge-title">🏦 Bank Queue Management System</h2>
+          <p className="challenge-description">
+            Build a real-time token-based queue system for a bank. Customers enter their name and receive a sequential token number. Two service counters independently call the next token from the queue. Each counter displays the token number currently being served. When a counter completes a token, it becomes available to serve the next customer in line. Includes a live queue board showing waiting and completed tokens.
+          </p>
+
+          <div className="challenge-footer">
+            <div className="challenge-timer">
+              <span className="timer-icon">⏱️</span>
+              <span>5 Minute Challenge</span>
+            </div>
+            <div className="challenge-stack">
+              <span className="stack-tag">React</span>
+              <span className="stack-tag">Node.js</span>
+              <span className="stack-tag">PostgreSQL</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="rules-card">
+          <h3 className="rules-title">📜 Common Rules</h3>
+          <div className="rules-grid">
+            <div className="rule-item">
+              <span className="rule-icon">🛠️</span>
+              <div>
+                <strong>Tech Stack</strong>
+                <p>React + Node.js + PostgreSQL</p>
+              </div>
+            </div>
+            <div className="rule-item">
+              <span className="rule-icon">⏱️</span>
+              <div>
+                <strong>Time Limit</strong>
+                <p>5 minutes with GitHub Copilot</p>
+              </div>
+            </div>
+            <div className="rule-item">
+              <span className="rule-icon">✅</span>
+              <div>
+                <strong>Must Include</strong>
+                <p>Full-stack CRUD, a styled UI, and a working database</p>
+              </div>
+            </div>
+            <div className="rule-item">
+              <span className="rule-icon">⭐</span>
+              <div>
+                <strong>Bonus</strong>
+                <p>Responsive design, animations, or real-time updates</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
       <Footer />
     </div>
   );
